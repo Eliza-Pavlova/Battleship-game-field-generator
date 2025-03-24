@@ -1,4 +1,4 @@
-# Battleship Game Setup
+# Battleship Game Field Generator
 
 This Python script generates fields for the "Battleship" game. It allows random placement of ships on a game field and supports saving and loading game fields from files.
 
