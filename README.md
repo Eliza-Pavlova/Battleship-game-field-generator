@@ -33,3 +33,25 @@ This Python script generates and manages a simple version of the "Battleship" ga
 - main(): Main function that manages the game logic, including field selection, ship placement, saving, and loading.
 
 ## Example Output
+
+Доступные размеры поля:
+1. 5 x 5
+2. 6 x 6
+3. 7 x 7
+4. 8 x 8
+5. 9 x 9
+6. 10 x 10
+7. Загрузить поле из файла.
+
+Выберите номер размера поля или загрузить поле (введите номер): 1
+
+Результат расстановки кораблей:
+   А Б В Г Д
+1  ~ ~ ~ ~ ~
+2  ~ ■ ■ ~ ~
+3  ~ ~ ~ ~ ~
+4  ■ ~ ~ ~ ~
+5  ~ ~ ~ ~ ■
+
+Хотите сохранить поле в файл? (да/нет): да
+Поле сохранено в файл game_field.txt.
