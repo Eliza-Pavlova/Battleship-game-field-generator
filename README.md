@@ -1,33 +1,33 @@
-# Battleship Game Field Generator
+# Генератор Поля Игры "Морской Бой"
 
-This Python script generates fields for the "Battleship" game. It allows random placement of ships on a game field and supports saving and loading game fields from files.
+Этот скрипт на Python генерирует поля для игры "Морской бой". Он позволяет случайным образом размещать корабли на игровом поле, поддерживает сохранение и загрузку уже существующих игровых полей из файлов.
 
-## Features
+## Особенности
 
-- Field Sizes: supports 5x5, 6x6, 7x7, 8x8, 9x9 and 10x10 grids.
-- Random Ship Placement: ships are placed automatically by progrsm with no overlaps or adjacent ships.
-- Save/Load: save the field to a file and load it back later.
-- Field Display: prints the current game field with coordinates.
+- **Размеры Полей**: поддерживает сетки 5x5, 6x6, 7x7, 8x8, 9x9 и 10x10.
+- **Случайное Размещение Кораблей**: корабли размещаются автоматически программой без наложений кораблей друг на друга или непосредственного соседства кораблей.
+- **Сохранение/Загрузка**: сохраняйте поле в файл и загрузите его позже.
+- **Отображение Поля**: выводит текущее игровое поле с координатами.
 
-## Requirements
+## Требования
 
 - Python 3.x
 
-## How to Use
+## Как Пользоваться
 
-1. Run the Script: launch the program, then choose a field size or load a field from a file.
-2. Ship Placement: ships are placed randomly on the selected grid.
-3. Save/Load: save the field to a file or load a previously saved field.
+1. **Запустите Скрипт**: запустите программу, затем выберите размер поля или загрузите поле из файла.
+2. **Размещение Кораблей**: корабли размещаются случайным образом на выбранной сетке.
+3. **Сохранение/Загрузка**: сохраните поле в файл или загрузите ранее сохраненное поле.
 
-## Functions
+## Функции
 
-- create_field(size): creates an empty game field of the given size.
-- print_field(field): Ddsplays the game field with row and column coordinates.
-- can_place_ship(field, start_row, start_col, end_row, end_col): checks if a ship can be placed on the field at the specified coordinates.
-- place_ship(field, start_row, start_col, end_row, end_col): places a ship on the field at the specified coordinates.
-- mark_surroundings(field, start_row, start_col, end_row, end_col): marks surrounding cells as unavailable for placing ships.
-- setup_ships(field, ships): randomly places ships on the field based on the given configuration.
-- save_field_to_file(field): saves the current game field to a file (`game_field.txt`).
-- load_field_from_file(filename="game_field.txt"): loads a game field from the specified file.
-- valid_input(prompt, min_value, max_value): prompts the user for input until a valid number within the specified range is entered.
-- main(): main function that manages the game logic, including field selection, ship placement, saving, and loading.
+- create_field(size): создает пустое игровое поле заданного размера.
+- print_field(field): отображает игровое поле с координатами строк и столбцов.
+- can_place_ship(field, start_row, start_col, end_row, end_col): проверяет, можно ли разместить корабль на поле по указанным координатам.
+- place_ship(field, start_row, start_col, end_row, end_col): размещает корабль на поле по указанным координатам.
+- mark_surroundings(field, start_row, start_col, end_row, end_col): помечает окружающие клетки как недоступные для размещения кораблей.
+- setup_ships(field, ships): случайным образом размещает корабли на поле в соответствии с заданной конфигурацией.
+- save_field_to_file(field): сохраняет текущее игровое поле в файл (game_field.txt).
+- load_field_from_file(filename="game_field.txt"): загружает игровое поле из указанного файла.
+- valid_input(prompt, min_value, max_value): запрашивает у пользователя ввод до тех пор, пока не будет введено допустимое число в заданном диапазоне.
+- main(): основная функция, управляющая логикой игры, включающая выбор поля, размещение кораблей, сохранение и загрузку.
